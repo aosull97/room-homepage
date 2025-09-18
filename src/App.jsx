@@ -4,9 +4,9 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="bg-black h-screen">
+    <div className="bg-black h-screen font-spartan">
       <h1>Vite + React</h1>
-      <div className="card">
+      <div className="card text-white">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
