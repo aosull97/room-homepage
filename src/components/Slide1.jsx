@@ -12,7 +12,7 @@ const Slide1 = () => {
           />
         </div>
         <div className="w-1/4 place-self-center m-auto">
-          <p className="font-semibold text-5xl"> Discover innovative ways to decorate</p>
+          <p className="font-semibold text-5xl">Discover innovative ways to decorate</p>
           <p className="text-grey-500 py-4">
             We provide unmatched quality, comfort, and style for property owners
             across the country. Our experts combine form and function in

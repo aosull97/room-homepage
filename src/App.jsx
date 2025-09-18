@@ -4,7 +4,7 @@ function App() {
 
   return (
     <div className="h-screen font-spartan">
-      <Slider />
+      <Slider /> 
     </div>
   )
 }
