@@ -1,22 +1,10 @@
-import { useState } from 'react'
+import Slider from "./components/Slider"
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="bg-black h-screen font-spartan">
-      <h1>Vite + React</h1>
-      <div className="card text-white">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <div className="h-screen font-spartan">
+      <Slider />
     </div>
   )
 }
