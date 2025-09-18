@@ -7,7 +7,7 @@ const Slide2 = () => {
         <div className="">
           <img
             src="/images/desktop-image-hero-2.jpg"
-            alt="Image of white chairs seated by a wooden table with a bonsai tree ontop"
+            alt="Image of three chairs, one yellow, one pink, and one grey"
             width={1000}
           />
         </div>

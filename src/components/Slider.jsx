@@ -7,6 +7,7 @@ const Slider = () => {
     <div>
         <Slide1 />
         <Slide2 />
+        <Slide3 />
     </div>
   )
 }
