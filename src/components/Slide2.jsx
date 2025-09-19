@@ -4,15 +4,15 @@ import SliderButton from "./SliderButton";
 const Slide2 = ({slideRight, slideLeft}) => {
   return (
     <div className="flex">
-      <div className="w-3/5">
+      <div className="w-1/2">
         <img
           src="/images/desktop-image-hero-2.jpg"
           alt="Image of three chairs, one yellow, one pink, and one grey"
           className="w-full"
         />
       </div>
-      <div className="w-2/5 flex relative">
-        <div className="w-3/5 m-auto ">
+      <div className="w-1/2 flex relative">
+        <div className="w-1/2 m-auto ">
           <p className="font-semibold text-5xl">
             We are available all across the globe
           </p>

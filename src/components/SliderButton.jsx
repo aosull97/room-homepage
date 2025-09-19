@@ -3,7 +3,7 @@ const SliderButton = ({ slideRight, slideLeft }) => {
   return (
     <div className="flex">
       <div>
-        <button onClick={slideLeft} className="bg-black p-4 hover:bg-grey-800">
+        <button onClick={slideLeft} className="bg-black p-4 hover:bg-grey-800 hover:cursor-pointer">
           <img
             src="/images/icon-angle-left.svg"
             alt="arrow icon"
@@ -13,7 +13,7 @@ const SliderButton = ({ slideRight, slideLeft }) => {
         </button>
       </div>
       <div>
-        <button onClick={slideRight} className="bg-black p-4 hover:bg-grey-800">
+        <button onClick={slideRight} className="bg-black p-4 hover:bg-grey-800 hover:cursor-pointer">
           <img
             src="/images/icon-angle-right.svg"
             alt="arrow icon"
