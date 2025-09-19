@@ -1,18 +1,21 @@
 import ShopNow from "./ShopNow";
+import SliderButton from "./SliderButton";
 
-const Slide1 = () => {
+const Slide1 = ({slideRight, slideLeft}) => {
   return (
-    <div>
-      <div className="flex items-center">
-        <div className="">
-          <img
-            src="/images/desktop-image-hero-1.jpg"
-            alt="Image of white chairs seated by a wooden table with a bonsai tree ontop"
-            width={1000}
-          />
-        </div>
-        <div className="w-1/4 place-self-center m-auto">
-          <p className="font-semibold text-5xl">Discover innovative ways to decorate</p>
+    <div className="flex">
+      <div className="w-3/5">
+        <img
+          src="/images/desktop-image-hero-1.jpg"
+          alt="Image of white chairs seated by a wooden table with a bonsai tree ontop"
+          className="w-full"
+        />
+      </div>
+      <div className="w-2/5 flex relative">
+        <div className="w-3/5 m-auto ">
+          <p className="font-semibold text-5xl">
+            Discover innovative ways to decorate
+          </p>
           <p className="text-grey-500 py-4">
             We provide unmatched quality, comfort, and style for property owners
             across the country. Our experts combine form and function in
@@ -21,6 +24,9 @@ const Slide1 = () => {
             you love.
           </p>
           <ShopNow />
+          <div className="absolute bottom-0 left-0 ">
+            <SliderButton slideRight={slideRight} slideLeft={slideLeft} />
+          </div>
         </div>
       </div>
     </div>

@@ -1,17 +1,18 @@
 import ShopNow from "./ShopNow";
+import SliderButton from "./SliderButton";
 
-const Slide3 = () => {
+const Slide3 = ({slideRight, slideLeft}) => {
   return (
-    <div>
-      <div className="flex items-center">
-        <div className="">
-          <img
-            src="/images/desktop-image-hero-3.jpg"
-            alt="Image of a black fold out chair"
-            width={1000}
-          />
-        </div>
-        <div className="w-1/4 place-self-center m-auto">
+    <div className="flex">
+      <div className="w-3/5">
+        <img
+          src="/images/desktop-image-hero-3.jpg"
+          alt="Image of a black fold out chair"
+          className="w-full"
+        />
+      </div>
+      <div className="w-2/5 flex relative">
+        <div className="w-3/5 m-auto ">
           <p className="font-semibold text-5xl">
             Manufactured with the best materials
           </p>
@@ -23,6 +24,9 @@ const Slide3 = () => {
             want for their home and office.
           </p>
           <ShopNow />
+          <div className="absolute bottom-0 left-0 ">
+            <SliderButton slideRight={slideRight} slideLeft={slideLeft} />
+          </div>
         </div>
       </div>
     </div>
@@ -30,3 +34,4 @@ const Slide3 = () => {
 };
 
 export default Slide3;
+

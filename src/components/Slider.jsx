@@ -1,15 +1,47 @@
-import Slide1 from "./Slide1"
-import Slide2 from "./Slide2"
-import Slide3 from "./Slide3"
+import Slide1 from "./Slide1";
+import Slide2 from "./Slide2";
+import Slide3 from "./Slide3";
+import { useState } from "react";
 
 const Slider = () => {
-  return (
-    <div>
-        <Slide1 />
-        <Slide2 />
-        <Slide3 />
-    </div>
-  )
-}
+  const [slideNumber, setSlideNumber] = useState(1);
 
-export default Slider
+  const slideRight = () => {
+    if (slideNumber === 3) {
+      setSlideNumber(1);
+    } else {
+      setSlideNumber(slideNumber + 1);
+    }
+  };
+
+  const slideLeft = () => {
+    if (slideNumber === 1) {
+      setSlideNumber(3);
+    } else {
+      setSlideNumber(slideNumber - 1);
+    }
+  };
+
+
+  if (slideNumber === 1) {
+    return (
+      <div>
+        <Slide1 slideRight={slideRight} slideLeft={slideLeft}  />
+      </div>
+    );
+  } else if (slideNumber === 2) {
+    return (
+      <div>
+        <Slide2  slideRight={slideRight} slideLeft={slideLeft} />
+      </div>
+    );
+  } else if (slideNumber === 3) {
+    return (
+      <div>
+        <Slide3  slideRight={slideRight} slideLeft={slideLeft} />
+      </div>
+    );
+  }
+};
+
+export default Slider;
