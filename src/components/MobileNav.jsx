@@ -1,7 +1,4 @@
-
-
-const Nav = ({navOpened, toggleNav}) => {
-
+const MobileNav = ({navOpened, toggleNav}) => {
 
   if (!navOpened) {
     return (
@@ -43,4 +40,4 @@ const Nav = ({navOpened, toggleNav}) => {
   }
 };
 
-export default Nav;
+export default MobileNav;
