@@ -11,7 +11,7 @@ const Slider = ({navOpened, toggleNav}) => {
   useEffect(() => {
 
   if(navOpened) {
-    setStyle("brightness-40 backdrop-brightness-90")
+    setStyle("brightness-40 backdrop-brightness-90 pointer-events-none")
   } else {
     setStyle("")
   }
