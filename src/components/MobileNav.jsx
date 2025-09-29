@@ -18,17 +18,18 @@ const MobileNav = ({navOpened, toggleNav}) => {
     );
   } else if (navOpened) {
     return (
-      <div className="bg-white flex px-6 py-10 justify-between">
-        <div>
+      <div className="bg-white flex px-6 py-10 justify-between ">
+        <div className="block">
           <img
             onClick={toggleNav}
             src="/images/icon-close.svg"
             alt="Close icon"
             id="close-icon"
+            width={20}
           />
         </div>
-        <div className="">
-          <ul className="flex gap-8 font-semibold">
+        <div>
+          <ul className="flex gap-6 font-semibold  text-lg">
             <li>home</li>
             <li>shop</li>
             <li>about</li>
