@@ -1,8 +1,10 @@
+import logo from "/images/logo.svg";
+
 const DesktopNav = () => {
   return (
     <div className="flex p-16 gap-14 text-white items-center">
         <div className="">
-          <img src="/images/logo.svg" alt="logo" width={82} />
+          <img src={logo} alt="logo" width={82} />
         </div>
         <div className="">
           <ul className="flex gap-8 text-xl md:gap-14 md:text-2xl">

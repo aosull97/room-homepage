@@ -1,3 +1,6 @@
+import arrow from "/images/icon-arrow.svg";
+
+
 const ShopNow = () => {
   return (
     <div>
@@ -6,7 +9,7 @@ const ShopNow = () => {
                 <p className='tracking-[0.5rem] font-semibold'>SHOP NOW</p>
             </div>
             <div>
-                <img src='/images/icon-arrow.svg' alt='arrow icon' className='' />
+                <img src={arrow} alt='arrow icon' />
             </div>
         
         </div>

@@ -1,3 +1,7 @@
+import left from "/images/icon-angle-left.svg";
+import right from "/images/icon-angle-right.svg";
+
+
 const SliderButton = ({ slideRight, slideLeft }) => {
     
   return (
@@ -5,7 +9,7 @@ const SliderButton = ({ slideRight, slideLeft }) => {
       <div>
         <button onClick={slideLeft} className="bg-black p-4 hover:bg-grey-800 hover:cursor-pointer">
           <img
-            src="/images/icon-angle-left.svg"
+            src={left}
             alt="arrow icon"
             height={14}
             width={14}
@@ -15,7 +19,7 @@ const SliderButton = ({ slideRight, slideLeft }) => {
       <div>
         <button onClick={slideRight} className="bg-black p-4 hover:bg-grey-800 hover:cursor-pointer">
           <img
-            src="/images/icon-angle-right.svg"
+            src={right}
             alt="arrow icon"
             height={14}
             width={14}

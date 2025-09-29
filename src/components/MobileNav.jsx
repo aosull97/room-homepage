@@ -1,3 +1,7 @@
+import logo from "/images/logo.svg";
+import hamburger from "/images/icon-hamburger.svg";
+import close from "/images/icon-close.svg";
+
 const MobileNav = ({navOpened, toggleNav}) => {
 
   if (!navOpened) {
@@ -6,12 +10,12 @@ const MobileNav = ({navOpened, toggleNav}) => {
         <div>
           <img
             onClick={toggleNav}
-            src="/images/icon-hamburger.svg"
+            src={hamburger}
             alt="hamburger icon"
           />
         </div>
         <div className="">
-          <img src="/images/logo.svg" alt="logo" />
+          <img src={logo} alt="logo" />
         </div>
         <div></div>
       </div>
@@ -22,7 +26,7 @@ const MobileNav = ({navOpened, toggleNav}) => {
         <div className="block">
           <img
             onClick={toggleNav}
-            src="/images/icon-close.svg"
+            src={close}
             alt="Close icon"
             id="close-icon"
             width={20}

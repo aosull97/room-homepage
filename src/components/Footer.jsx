@@ -1,3 +1,6 @@
+import dark from "/images/image-about-dark.jpg";
+import light from "/images/image-about-light.jpg";
+
 import { useState, useEffect } from "react";
 
 const Footer = ({navOpened}) => {
@@ -17,7 +20,7 @@ const Footer = ({navOpened}) => {
     <div className={style}>
       <div className="">
         <img
-          src="/images/image-about-dark.jpg"
+          src={dark}
           alt="Image of dark furniture including a bed, two chairs and a table"
           className="w-full h-full object-cover"
         />
@@ -36,7 +39,7 @@ const Footer = ({navOpened}) => {
       </div>
       <div className="">
         <img
-          src="/images/image-about-light.jpg"
+          src={light}
           alt="Image of a white plastic chair in a light white room"
           className="w-full h-full object-cover"
         />
