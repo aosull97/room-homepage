@@ -1,12 +1,14 @@
 import ShopNow from "./ShopNow";
 import SliderButton from "./SliderButton";
+import mobileHero1 from "/images/mobile-image-hero-1.jpg";
+import desktopHero1 from "/images/desktop-image-hero-1.jpg";
 
 const Slide1 = ({ slideRight, slideLeft }) => {
   return (
     <div className="lg:flex h-full">
       <div className="lg:hidden relative">
         <img
-          src="/images/mobile-image-hero-1.jpg"
+          src={mobileHero1}
           alt="Image of white chairs seated by a wooden table with a bonsai tree ontop"
           className="w-full"
         />
@@ -16,7 +18,7 @@ const Slide1 = ({ slideRight, slideLeft }) => {
       </div>
       <div className="w-3/5 hidden lg:block">
         <img
-          src="/images/desktop-image-hero-1.jpg"
+          src={desktopHero1}
           alt="Image of white chairs seated by a wooden table with a bonsai tree ontop"
           className="w-full h-full object-cover"
         />
