@@ -5,7 +5,7 @@ const DesktopNav = () => {
           <img src="/images/logo.svg" alt="logo" width={82} />
         </div>
         <div className="">
-          <ul className="flex gap-8 text-xl">
+          <ul className="flex gap-8 text-xl md:gap-14 md:text-2xl">
             <li className="hover:cursor-pointer">h<span className="hover:underline hover:underline-offset-12">om</span>e</li>
             <li className="hover:cursor-pointer">s<span className="hover:underline hover:underline-offset-12">ho</span>p</li>
             <li className="hover:cursor-pointer">a<span className="hover:underline hover:underline-offset-12">bou</span>t</li>

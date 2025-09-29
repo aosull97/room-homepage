@@ -12,7 +12,7 @@ function App() {
   };
 
   return (
-    <div className="font-spartan">
+    <div className="font-spartan lg:h-screen">
       <Slider navOpened={navOpened} toggleNav={toggleNav} /> 
       <Footer navOpened={navOpened} toggleNav={toggleNav} />
     </div>

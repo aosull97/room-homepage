@@ -35,14 +35,14 @@ const Slider = ({ navOpened, toggleNav }) => {
 
   if (slideNumber === 1) {
     return (
-      <div className="h-2/3 relative">
+      <div className="relative lg:h-2/3">
         <div className="absolute z-2 top-0 left-0 right-0 lg:hidden">
           <MobileNav navOpened={navOpened} toggleNav={toggleNav} />
         </div>
         <div className="absolute z-2 top-0 left-0 right-0 hidden lg:block">
           <DesktopNav />
         </div>
-        <div className={style}>
+        <div className={`${style} h-full`}>
           <Slide1 slideRight={slideRight} slideLeft={slideLeft} />
         </div>
       </div>
@@ -56,7 +56,7 @@ const Slider = ({ navOpened, toggleNav }) => {
         <div className="absolute z-2 top-0 left-0 right-0 hidden lg:block">
           <DesktopNav />
         </div>
-        <div className={style}>
+        <div className={`${style} h-full`}>
           <Slide2 slideRight={slideRight} slideLeft={slideLeft} />
         </div>
       </div>
@@ -70,7 +70,7 @@ const Slider = ({ navOpened, toggleNav }) => {
         <div className="absolute z-2 top-0 left-0 right-0 hidden lg:block">
           <DesktopNav />
         </div>
-        <div className={style}>
+        <div className={`${style} h-full`}>
           <Slide3 slideRight={slideRight} slideLeft={slideLeft} />
         </div>
       </div>
