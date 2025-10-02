@@ -25,9 +25,9 @@ const Footer = ({navOpened}) => {
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="px-10 pt-10 pb-10 lg:w-2/5 self-center overflow-scroll max-h-full">
-          <p className="font-semibold text-md tracking-[0.4rem] md:text-2xl">ABOUT OUR FURNITURE</p>
-          <p className="pt-4 text-grey-500 lg:text-lg">
+      <div className="px-10 lg:px-2 py-10 lg:py-2 lg:w-2/5 self-center overflow-scroll max-h-full">
+          <p className="font-semibold text-md tracking-[0.4rem] md:text-xl lg:text-sm">ABOUT OUR FURNITURE</p>
+          <p className="pt-4 text-grey-500 lg:text-xs xl:text-sm">
             Our multifunctional collection blends design and function to suit
             your individual taste. Make each room unique, or pick a cohesive
             theme that best express your interests and what inspires you. Find

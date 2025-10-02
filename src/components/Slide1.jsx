@@ -24,11 +24,11 @@ const Slide1 = ({ slideRight, slideLeft }) => {
         />
       </div>
       <div className="lg:w-2/5 lg:place-self-center relative h-100%">
-        <div className="px-10 py-12 md:py-16 md:px-20">
-          <p className="font-semibold text-3xl lg:text-6xl">
+        <div className="px-10 py-12 xlg:py-16 xl:px-12">
+          <p className="font-semibold text-3xl lg:text-4xl xl:text-5xl">
             Discover innovative ways to decorate
           </p>
-          <p className="text-grey-500 py-4 md:text-xl lg:text-lg">
+          <p className="text-grey-500 py-4 lg:text-xs xl:text-sm">
             We provide unmatched quality, comfort, and style for property owners
             across the country. Our experts combine form and function in
             bringing your vision to life. Create a room in your own style with

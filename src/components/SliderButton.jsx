@@ -7,7 +7,7 @@ const SliderButton = ({ slideRight, slideLeft }) => {
   return (
     <div className="flex gap-4 bg-black">
       <div>
-        <button onClick={slideLeft} className="bg-black p-4 hover:bg-grey-800 hover:cursor-pointer">
+        <button onClick={slideLeft} className="bg-black p-2 hover:bg-grey-800 hover:cursor-pointer">
           <img
             src={left}
             alt="arrow icon"
@@ -17,7 +17,7 @@ const SliderButton = ({ slideRight, slideLeft }) => {
         </button>
       </div>
       <div>
-        <button onClick={slideRight} className="bg-black p-4 hover:bg-grey-800 hover:cursor-pointer">
+        <button onClick={slideRight} className="bg-black p-2 hover:bg-grey-800 hover:cursor-pointer">
           <img
             src={right}
             alt="arrow icon"

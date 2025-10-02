@@ -24,11 +24,11 @@ const Slide3 = ({ slideRight, slideLeft}) => {
         />
       </div>
       <div className="lg:w-2/5 lg:place-self-center relative h-100%">
-        <div className="px-10 py-12 md:py-16 md:px-20">
-          <p className="font-semibold text-3xl lg:text-6xl">
+        <div className="px-10 py-12 xlg:py-16 xl:px-12">
+          <p className="font-semibold text-3xl lg:text-4xl xl:text-5xl">
             Manufactured with the best materials
           </p>
-          <p className="text-grey-500 py-4 md:text-xl lg:text-lg">
+          <p className="text-grey-500 py-4 lg:text-md">
             Our modern furniture store provide a high level of quality. Our
             company has invested in advanced technology to ensure that every
             product is made as perfect and as consistent as possible. With three
