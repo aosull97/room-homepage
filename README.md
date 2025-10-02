@@ -47,25 +47,25 @@ To build a homepage for a website where users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learnt how to use a combination of useEffect and document.addEventListener to respond to user key presses:
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "ArrowRight") {
+        slideRight();
+        console.log("right");
+      } else if (e.key === "ArrowLeft") {
+        slideLeft();
+        console.log("left");
+      }
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  });
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
 ### Continued development
 
@@ -75,6 +75,8 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 - [Google Fonts](https://fonts.google.com/) - I could find the font requested in the design brief here.
 - [Tailwind documentation](https://tailwindcss.com/docs/installation/using-vite) - I referred to this documentation when applying styling with Tailwind CSS. 
+- [useKeyPress Guide](https://ryankubik.com/blog/use-key-press) - This blog helped me understand how to deal with keyboard events in React by using a combination of useEffect and document.addEventListener.
+
 
 ## Author
 
