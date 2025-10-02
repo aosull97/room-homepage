@@ -24,8 +24,8 @@ const Slide3 = ({ slideRight, slideLeft}) => {
         />
       </div>
       <div className="lg:w-2/5 lg:place-self-center relative h-100%">
-        <div className="px-12 py-16 md:px-20">
-          <p className="font-semibold text-4xl lg:text-6xl">
+        <div className="px-10 py-12 md:py-16 md:px-20">
+          <p className="font-semibold text-3xl lg:text-6xl">
             Manufactured with the best materials
           </p>
           <p className="text-grey-500 py-4 md:text-xl lg:text-lg">
