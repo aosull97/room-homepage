@@ -33,6 +33,22 @@ const Slider = ({ navOpened, toggleNav }) => {
     }
   };
 
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "ArrowRight") {
+        slideRight();
+        console.log("right");
+      } else if (e.key === "ArrowLeft") {
+        slideLeft();
+        console.log("left");
+      }
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  });
+
   if (slideNumber === 1) {
     return (
       <div className="relative lg:h-2/3">

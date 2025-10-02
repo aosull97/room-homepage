@@ -3,7 +3,7 @@ import SliderButton from "./SliderButton";
 import mobileHero3 from "/images/mobile-image-hero-3.jpg";
 import desktopHero3 from "/images/desktop-image-hero-3.jpg";
 
-const Slide3 = ({ slideRight, slideLeft }) => {
+const Slide3 = ({ slideRight, slideLeft}) => {
   return (
     <div className="lg:flex h-full">
       <div className="lg:hidden relative">
