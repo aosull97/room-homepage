@@ -24,7 +24,7 @@ const Slide1 = ({ slideRight, slideLeft }) => {
         />
       </div>
       <div className="lg:w-2/5 lg:place-self-center relative h-100%">
-        <div className="px-10 py-12 xlg:py-16 xl:px-12">
+        <div className="px-10 py-12 xlg:py-16 xl:px-18">
           <p className="font-semibold text-3xl lg:text-4xl xl:text-5xl">
             Discover innovative ways to decorate
           </p>

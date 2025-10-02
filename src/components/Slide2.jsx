@@ -24,11 +24,11 @@ const Slide2 = ({ slideRight, slideLeft}) => {
         />
       </div>
       <div className="lg:w-2/5 lg:place-self-center relative h-100%">
-        <div className="px-10 py-12 xlg:py-16 xl:px-12">
+        <div className="px-10 py-12 xlg:py-16 xl:px-18">
           <p className="font-semibold text-3xl lg:text-4xl xl:text-5xl">
             We are available all across the globe
           </p>
-          <p className="text-grey-500 py-4 lg:text-md">
+          <p className="text-grey-500 py-4 lg:text-xs xl:text-sm">
             With stores all over the world, it's easy for you to find furniture
             for your home or place of business. Locally, we’re in most major
             cities throughout the country. Find the branch nearest you using our
